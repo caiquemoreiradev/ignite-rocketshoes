@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 
-import background from '../assets/images/background.svg';
-
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -12,8 +10,12 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #191920 url(${background}) no-repeat center top;
+    background: linear-gradient(90deg, #202024 0%, #00291D 100%);;
     -webkit-font-smoothing: antialiased;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   body, input, button {
